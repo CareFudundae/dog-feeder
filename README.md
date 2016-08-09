@@ -1,2 +1,2 @@
 # dog-feeder
-code for automatic dog feeder with camera
+code for picam to record

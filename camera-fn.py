@@ -3,8 +3,6 @@ from time import sleep
 import time
 from os import system
 
-#mkdir images
-
 startTime = time.time()
 camera = PiCamera()
 

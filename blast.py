@@ -2,5 +2,7 @@
 with open('myinfo.config') as f:
   credentials = [x.strip().split(':') for x in f.readlines()]
   
-for username,password in credentials:
-  print('credentials')
+for usr,pwd in credentials:
+  print(credentials)
+  print(usr)
+  print(pwd)

@@ -1,3 +1,5 @@
 #main program
-python3 camera-fn.py
-blast.py
+
+import os
+os.system('python camera-fn.py')
+os.system('python blast.py')

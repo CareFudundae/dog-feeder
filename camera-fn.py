@@ -9,7 +9,8 @@ camera = PiCamera()
 camera.hflip=True
 camera.vflip=True
 #camera.resolution=(1024,768)
-camera.resolution=(640,480)
+#camera.resolution=(640,480)
+camera.resolution=(320,240)
 
 #camera warm up
 camera.start_preview()
@@ -22,7 +23,7 @@ for i in range(10):
 	sleep(.5)
 camera.close()
 endTime = time.time()
-print('capture end, time elapsed=',endTime - startTime, 's')
+print('capture end, time elapsed=', endTime - startTime, "s")
 
 
 #convert jpgs to gif
@@ -32,4 +33,3 @@ system('convert -delay 100 -loop 0 image*.jpg animation.gif')
 endTime = time.time()
 print('done, total time=', endTime-startTime, 's')
 
-#email image

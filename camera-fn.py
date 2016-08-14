@@ -9,8 +9,8 @@ camera = PiCamera()
 camera.hflip=True
 camera.vflip=True
 #camera.resolution=(1024,768)
-#camera.resolution=(640,480)
-camera.resolution=(320,240)
+camera.resolution=(640,480)
+#camera.resolution=(320,240)
 
 #camera warm up
 camera.start_preview()
@@ -28,7 +28,7 @@ print('capture end, time elapsed=', endTime - startTime, "s")
 
 #convert jpgs to gif
 print('convert to gif start')
-system('convert -delay 10 -loop 0 image*.jpg animation.gif')
+system('convert -delay 50 -loop 0 image*.jpg animation.gif')
 
 endTime = time.time()
 print('done, total time=', endTime-startTime, 's')
